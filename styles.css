@@ -1,0 +1,41 @@
+body{
+    padding: 20px 20px 20px 20px;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+h3{
+text-align: center;
+  background-color: dodgerblue;
+  width: 50%;
+  margin:initial;
+ 
+}
+
+#btn-set{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    
+}
+#btn-set:hover{
+    border: 1px solid black;
+}
+
+#btn-set:active{
+    background-color: chartreuse;
+}
+
+#verificationText{
+    color: red;
+    font-weight: bold;
+}
+
+
+

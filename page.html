@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h3>please fill your info</h3>
+    </header>
+
+    <div id="AppWrapper">
+      <script src="inputController.js"></script>
+      <form>
+      your name: <br />
+      <input type="text" id="username" size="50" maxlength="50" /><br />
+      your pass: <br />
+      <input type="password" id="password" size="50" maxlength="50" /><br />
+
+      your description: <br />
+      <textarea id="textarea" rows="20" cols="40">
+    ....your profile
+    </textarea
+      ><br />
+      <fieldset style="width: 300px">
+        <legend style="padding: 5px 5px 5px 5px; font-weight: bold">
+          sexo
+        </legend>
+        <input
+          type="radio"
+          name="fieldsex"
+          value="masculino"
+          checked="checked"
+        />
+        masculino
+        <input type="radio" name="fieldsex" value="femenino" />femenino
+        <input type="radio" name="fieldsex" value="otro" /> otro
+      </fieldset>
+      <br />
+      <div>
+        your country:
+        <select name="selector" onchange="getSelected(this)">
+          <option></option>
+          <option>Mexico</option>
+          <option>USA</option>
+          <option>India</option>
+        </select>
+      </div>
+
+      <br />
+    </form>
+      <button id="btn-set" onclick="setProfile()">Continue</button>
+
+      <br />
+      <p id="verificationText"></p>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>
